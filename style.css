@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #0081C9;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1 {
+    margin: 100px;
+    color: #FFC93C;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-weight: 900;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid #06283D;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(255, 246, 246, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+  
+button:after {
+    content: "";
+    background-color: #FFC93C;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  button:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    button {
+      padding: 13px 50px 13px;
+    }
+  }
+
+  #quote {
+    color: #f0f0f0;
+  }
+
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+  }
+  
+  nav ul {
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #f1c40f;
+  }
+  
